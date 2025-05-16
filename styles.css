@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -25,7 +28,7 @@ body {
 
 .title {
   margin: 0 0 1rem 0;
-  font-family: "Italiana", cursive;
+  font-family: "Lobster", cursive;
   font-size: 3rem;
   line-height: 3rem;
 }
