@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+head {
+  display: none;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.hero {
+  height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(80, 79, 79, 0.6), rgba(80, 79, 79, 0.6)),
+    url("images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+}
+
+.title {
+  font-family: "Italiana", sans-serif;
+  gap: 6px;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 4rem;
+}
+
+.subtitle {
+  padding: 15px 30px;
+  font-size: 3rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
