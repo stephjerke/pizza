@@ -2,55 +2,70 @@
   margin: 0px;
   padding: 0px;
 }
-head {
-  display: none;
-}
 
 body {
   background-color: #1a1a1a;
   color: white;
+  font-family: "Inter", sans-serif;
 }
 
 .hero {
-  height: calc(100vh - 5rem);
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
-  background: linear-gradient(rgba(80, 79, 79, 0.6), rgba(80, 79, 79, 0.6)),
+  background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)),
     url("images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  text-align: center;
+  justify-content: center;
 }
 
 .title {
-  font-family: "Italiana", sans-serif;
-  gap: 6px;
-}
-
-h1 {
-  font-style: italic;
-  font-size: 4rem;
-}
-
-.subtitle {
-  padding: 15px 30px;
+  margin: 0 0 1rem 0;
+  font-family: "Italiana", cursive;
   font-size: 3rem;
+  line-height: 3rem;
 }
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
+subtitle {
+  color: #d3d1d1;
+}
+
+.hero-action {
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  border: 1px solid #b10202;
   text-decoration: none;
-  border-radius: 5px;
+  color: #fff;
+  background-color: #b10202;
+  transition: all 0.2s ease-in-out;
 }
 
-@media only screen and (max-width: 480px) {
-  img {
-    width: 100%;
+.hero-action:hover {
+  background-color: transparent;
+  color: #b10202;
+}
+
+@media only screen (max-width 600px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-action {
+    padding: 1.2rem 2.5rem;
+  }
+}
+
+@media only screen (min-width: 1000px) {
+  .title {
+    font-size: 6rem;
+    line-height: 6.5rem;
   }
 }
