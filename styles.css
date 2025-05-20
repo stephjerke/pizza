@@ -13,7 +13,7 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  height: calc(100vh - 50px);
   display: flex;
   align-items: center;
   text-align: center;
@@ -40,19 +40,37 @@ subtitle {
 .hero-action {
   margin-top: 4rem;
   padding: 1rem 2rem;
-  border: 1px solid #b10202;
+  border: 1px solid #ff0000;
   text-decoration: none;
   color: #fff;
-  background-color: #b10202;
+  background-color: #ff0000;
   transition: all 0.2s ease-in-out;
 }
 
 .hero-action:hover {
   background-color: transparent;
-  color: #b10202;
+  color: #ff0000;
 }
 
-@media only screen (max-width 600px) {
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navi:hover {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.navi @media only screen (max-width 600px) {
   .title {
     font-size: 4rem;
     line-height: 4rem;
