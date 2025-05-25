@@ -13,7 +13,7 @@ body {
 }
 
 .hero {
-  height: calc(100vh - 50px);
+  height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -39,7 +39,7 @@ subtitle {
 
 .hero-action {
   margin-top: 4rem;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   border: 1px solid #ff0000;
   text-decoration: none;
   color: #fff;
@@ -53,21 +53,27 @@ subtitle {
 }
 
 nav {
+  background-color: #1a1a1a;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
+  position: absolute;
   height: 50px;
+  width: 100%;
 }
 
 .nav-item {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+  margin: 2rem 0;
+  padding: 2rem 2rem;
 }
 
 .navi:hover {
-  text-decoration: none;
   color: #ff0000;
+  transition: color 0.3s ease-in-out;
 }
 
 .navi @media only screen (max-width 600px) {
