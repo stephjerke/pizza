@@ -138,12 +138,15 @@ nav {
     font-size: 4rem;
     line-height: 4rem;
   }
+
   .subtitle {
     font-size: 1rem;
   }
+
   .button {
     padding: 1.2rem 2.5rem;
   }
+
   .text-about {
     font-size: 1rem;
   }
@@ -154,11 +157,17 @@ nav {
     font-size: 6rem;
     line-height: 6.5rem;
   }
+
   .subtitle {
     font-size: 1.5rem;
   }
+
   .navi {
     gap: 4rem;
+  }
+
+  .heading {
+    font-size: 2rem;
   }
 }
 
