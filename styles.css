@@ -48,19 +48,30 @@ body {
   color: var(--sub-text-color);
 }
 
-.button {
-  max-width: fit-content;
+.button,
+.button-inverted {
+  width: fit-content;
   padding: 1rem 2rem;
   border: 1px solid var(--primary-color);
-  text-decoration: none;
   color: #fff;
   background-color: var(--primary-color);
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
+}
+
+.button-inverted {
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
 .button:hover {
   background-color: transparent;
   color: var(--primary-color);
+}
+
+.button-inverted:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .hero-action {
@@ -149,6 +160,12 @@ nav {
 
   .text-about {
     font-size: 1rem;
+  }
+
+  .footer {
+    margin-top: 4rem;
+    padding: 3rem 0;
+    gap: 3rem;
   }
 }
 
